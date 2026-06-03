@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jan | IT Support Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --primary:#2563eb;
+    --secondary:#60a5fa;
+    --dark:#0f172a;
+    --light:#f8fafc;
+    --card:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--light);
+    color:#1e293b;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(15,23,42,0.95);
+    backdrop-filter:blur(10px);
+    z-index:999;
+}
+
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 25px;
+}
+
+.logo{
+    color:white;
+    font-size:1.4rem;
+    font-weight:700;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:
+    linear-gradient(rgba(15,23,42,.85),rgba(15,23,42,.85)),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    color:var(--secondary);
+    margin-bottom:20px;
+}
+
+.hero p{
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:white;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:90px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+    color:var(--dark);
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.skill-card h3{
+    margin-bottom:10px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.stat{
+    background:var(--dark);
+    color:white;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.stat h2{
+    font-size:2rem;
+}
+
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.timeline-item{
+    background:white;
+    padding:25px;
+    border-left:5px solid var(--primary);
+    border-radius:10px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:var(--primary);
+    text-decoration:none;
+}
+
+footer{
+    background:var(--dark);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.fade{
+    opacity:0;
+    transform:translateY(30px);
+    transition:.8s;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.about{
+    grid-template-columns:1fr;
+}
+
+.nav-links{
+    display:none;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="nav-container">
+<div class="logo">JAN.</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content fade">
+<h1>Jan</h1>
+
+<h2>IT Support | Helpdesk | Technical Support</h2>
+
+<p>
+Dedicated IT Support professional with strong knowledge of hardware,
+software, networking, troubleshooting, and user support.
+Passionate about solving technical problems and ensuring business operations run smoothly.
+</p>
+
+<a href="CV.pdf" class="btn btn-primary">
+Download CV
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title fade">About Me</h2>
+
+<div class="about">
+
+<div class="card fade">
+
+<h3>Professional Summary</h3>
+
+<br>
+
+<p>
+I am an IT-focused professional with experience supporting end-users,
+maintaining IT equipment, troubleshooting system issues,
+and assisting network connectivity problems.
+I enjoy helping people solve technical challenges and continuously improving my skills.
+</p>
+
+</div>
+
+<div class="card fade">
+
+<h3>Core Responsibilities</h3>
+
+<br>
+
+<ul>
+<li>Install & configure PCs, laptops, printers</li>
+<li>Hardware & software troubleshooting</li>
+<li>LAN / Wi-Fi support</li>
+<li>Email & internet troubleshooting</li>
+<li>User technical support</li>
+<li>System maintenance</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title fade">Achievements</h2>
+
+<div class="stats">
+
+<div class="stat fade">
+<h2>100+</h2>
+<p>Technical Issues Resolved</p>
+</div>
+
+<div class="stat fade">
+<h2>95%</h2>
+<p>User Satisfaction</p>
+</div>
+
+<div class="stat fade">
+<h2>24/7</h2>
+<p>Problem Solving Mindset</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title fade">Skills</h2>
+
+<div class="skills">
+
+<div class="skill-card fade">
+<h3>Windows</h3>
+<p>Windows 10 & 11</p>
+</div>
+
+<div class="skill-card fade">
+<h3>Networking</h3>
+<p>LAN, Wi-Fi, Router</p>
+</div>
+
+<div class="skill-card fade">
+<h3>Hardware</h3>
+<p>PC, Laptop, Printer</p>
+</div>
+
+<div class="skill-card fade">
+<h3>Office</h3>
+<p>Microsoft Office</p>
+</div>
+
+<div class="skill-card fade">
+<h3>Support</h3>
+<p>Helpdesk & Remote Support</p>
+</div>
+
+<div class="skill-card fade">
+<h3>Troubleshooting</h3>
+<p>Problem Analysis</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2 class="section-title fade">Experience</h2>
+
+<div class="timeline">
+
+<div class="timeline-item fade">
+<h3>IT Support</h3>
+<p>
+Provided technical support for users, maintained IT devices,
+resolved hardware/software issues, and ensured operational efficiency.
+</p>
+</div>
+
+<div class="timeline-item fade">
+<h3>Network Support</h3>
+<p>
+Assisted in maintaining LAN/Wi-Fi connectivity,
+router configuration, and network troubleshooting.
+</p>
+</div>
+
+<div class="timeline-item fade">
+<h3>System Maintenance</h3>
+<p>
+Performed preventive maintenance and software installation
+to ensure stable performance.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title fade">Contact</h2>
+
+<div class="card contact fade">
+
+<p><strong>Email:</strong> yourmail@email.com</p>
+<br>
+
+<p><strong>WhatsApp:</strong> +62xxxxxxxxxx</p>
+<br>
+
+<p><strong>LinkedIn:</strong> linkedin.com/in/username</p>
+<br>
+
+<p><strong>Location:</strong> West Java, Indonesia</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Jan | IT Support Portfolio
+</footer>
+
+<script>
+
+const observer = new IntersectionObserver(entries => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".fade").forEach(el => {
+
+observer.observe(el);
+
+});
+
+</script>
+
+</body>
+</html>
